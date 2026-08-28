@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhanimoorthi | Business & AI Technology Enthusiast</title>
-    <meta name="description" content="Portfolio of Dhanimoorthi - BBA student passionate about AI tools, digital transformation, and business efficiency.">
+    <title>Dhanimoorthi | Business & AI Technology • PRICE ProtoSem</title>
+    <meta name="description" content="Portfolio of Dhanimoorthi - BBA student & Innovation Engineer Trainee at PRICE ProtoSem, passionate about AI tools, digital transformation, and business efficiency.">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Plus Jakarta Sans -->
@@ -116,6 +116,26 @@
             z-index: 0;
             pointer-events: none;
         }
+
+        /* ProtoSem Timeline & Card Specific Styles */
+        .week-card {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .week-card:hover {
+            transform: translateY(-3px);
+            border-color: rgba(129, 140, 248, 0.6);
+            background: rgba(30, 27, 75, 0.45);
+            box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.3);
+        }
+        .week-card:hover .week-arrow {
+            transform: translateX(3px);
+            color: #818cf8;
+        }
+        .week-card:hover .week-badge {
+            background-color: rgba(99, 102, 241, 0.25);
+            color: #c7d2fe;
+            border-color: rgba(129, 140, 248, 0.4);
+        }
     </style>
 </head>
 <body class="relative min-h-screen selection:bg-indigo-500 selection:text-white">
@@ -135,9 +155,13 @@
                 <span class="text-white">Dhanimoorthi<span class="text-indigo-400">.</span></span>
             </a>
 
-            <!-- Nav Links -->
-            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-300">
+            <!-- Nav Links with ProtoSem Added -->
+            <div class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-300">
                 <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                <a href="#protosem" class="text-indigo-300 font-semibold hover:text-indigo-400 transition-colors flex items-center gap-1.5">
+                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
+                    <span>ProtoSem</span>
+                </a>
                 <a href="#focus" class="hover:text-indigo-400 transition-colors">Current Focus</a>
                 <a href="#skills" class="hover:text-indigo-400 transition-colors">Skills</a>
                 <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
@@ -161,7 +185,7 @@
                 <div class="lg:col-span-7 space-y-6">
                     <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill text-xs font-semibold text-indigo-300 border border-indigo-500/30">
                         <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-                        BBA Student • AI & Digital Productivity Strategist
+                        BBA Student • Innovation Engineer Trainee @ PRICE ProtoSem
                     </div>
 
                     <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
@@ -169,7 +193,7 @@
                     </h1>
 
                     <p class="text-gray-400 text-base sm:text-lg leading-relaxed max-w-2xl">
-                        Hello! I'm <strong class="text-gray-100 font-semibold">Dhanimoorthi</strong>. I bridge business management principles with cutting-edge AI technologies to optimize workflows, boost productivity, and drive smarter operational decisions.
+                        Hello! I'm <strong class="text-gray-100 font-semibold">Dhanimoorthi</strong>. I bridge business management principles with cutting-edge AI technologies and innovation engineering to optimize workflows, solve industry commerce challenges, and drive smart operational decisions.
                     </p>
 
                     <!-- CTAs -->
@@ -178,9 +202,9 @@
                             <i class="fa-solid fa-paper-plane"></i>
                             <span>Get in Touch</span>
                         </a>
-                        <a href="#focus" class="px-6 py-3.5 rounded-xl glass-pill text-gray-300 hover:text-white hover:border-indigo-500/50 text-sm font-semibold transition-all flex items-center gap-2">
-                            <i class="fa-solid fa-compass"></i>
-                            <span>Explore Focus Areas</span>
+                        <a href="#protosem" class="px-6 py-3.5 rounded-xl glass-pill text-indigo-300 hover:text-white hover:border-indigo-500/50 text-sm font-semibold transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-bolt-lightning text-indigo-400"></i>
+                            <span>Explore ProtoSem 20-Week Journey</span>
                         </a>
                         <a href="https://github.com/dhanimoorthi-creator" target="_blank" class="p-3.5 rounded-xl glass-pill text-gray-400 hover:text-white hover:border-indigo-500/50 transition-all" aria-label="GitHub Profile">
                             <i class="fa-brands fa-github text-lg"></i>
@@ -190,16 +214,16 @@
                     <!-- Quick Highlight Badges -->
                     <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/5">
                         <div>
-                            <p class="text-xl sm:text-2xl font-bold text-white">BBA</p>
-                            <p class="text-xs text-gray-400 font-medium">Business Administration</p>
+                            <p class="text-xl sm:text-2xl font-bold text-white">PRICE</p>
+                            <p class="text-xs text-gray-400 font-medium">ProtoSem Fellow</p>
                         </div>
                         <div>
-                            <p class="text-xl sm:text-2xl font-bold text-indigo-400">AI-First</p>
-                            <p class="text-xs text-gray-400 font-medium">Workflow Optimization</p>
+                            <p class="text-xl sm:text-2xl font-bold text-indigo-400">20-Week</p>
+                            <p class="text-xs text-gray-400 font-medium">Innovation Journey</p>
                         </div>
                         <div>
-                            <p class="text-xl sm:text-2xl font-bold text-purple-400">100%</p>
-                            <p class="text-xs text-gray-400 font-medium">Growth Mindset</p>
+                            <p class="text-xl sm:text-2xl font-bold text-purple-400">BBA + AI</p>
+                            <p class="text-xs text-gray-400 font-medium">Applied Tech Strategy</p>
                         </div>
                     </div>
                 </div>
@@ -224,7 +248,7 @@
 
                             <div class="space-y-1">
                                 <h3 class="text-xl font-bold text-white">Dhanimoorthi</h3>
-                                <p class="text-sm text-indigo-300 font-medium">Business Admin & AI Explorer</p>
+                                <p class="text-sm text-indigo-300 font-medium">Innovation Engineer Trainee • BBA</p>
                             </div>
 
                             <div class="bg-white/5 rounded-2xl p-4 text-left space-y-2.5 border border-white/5 text-xs text-gray-300">
@@ -233,7 +257,7 @@
                                     <span>Core Mission</span>
                                 </div>
                                 <p class="leading-relaxed">
-                                    "Leveraging modern AI technologies to simplify complex business problems, eliminate inefficiencies, and build agile operational systems."
+                                    "Leveraging modern AI technologies and innovation engineering to solve real-world retail & commerce challenges, eliminate inefficiencies, and build agile operational systems."
                                 </p>
                             </div>
 
@@ -258,17 +282,161 @@
                     </div>
                     <div class="md:col-span-8 space-y-4 text-gray-300 text-sm sm:text-base leading-relaxed">
                         <p>
-                            As a <strong class="text-white">Bachelor of Business Administration (BBA)</strong> student, I have always been passionate about organizational efficiency and leadership. When I discovered the rapid evolution of artificial intelligence and digital tools, I immediately recognized the immense opportunity to reshape how modern businesses operate.
+                            As a <strong class="text-white">Bachelor of Business Administration (BBA)</strong> student and <strong class="text-indigo-300">PRICE ProtoSem Innovation Engineer Trainee</strong>, I combine organizational management principles with modern digital technology and AI-driven systems.
                         </p>
                         <p>
-                            My mission is to become an adaptable professional who speaks both languages: **business strategy** and **digital technology**. I actively explore prompt engineering, AI agent workflows, data analysis, and productivity ecosystems like Notion and automated toolchains.
+                            My mission is to become an adaptable professional who operates at the intersection of **business strategy**, **applied AI**, and **practical prototyping**. I actively explore prompt engineering, AI workflow design, data analysis, and cross-disciplinary innovation to build high-impact solutions for enterprise and commerce.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Current Focus & Projects (Beginner Failsafe Reframed) -->
+        <!-- ========================================================================= -->
+        <!-- PROTOSEM: 20-WEEK INDUSTRY-INTEGRATED INNOVATION PROGRAMME SECTION -->
+        <!-- ========================================================================= -->
+        <section id="protosem" class="max-w-6xl mx-auto px-6 py-16 space-y-12">
+            
+            <!-- Section Header & Intro -->
+            <div class="glass-card rounded-3xl p-8 sm:p-12 space-y-8 relative overflow-hidden">
+                <!-- Ambient corner glow -->
+                <div class="absolute -top-24 -right-24 w-72 h-72 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="space-y-4">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full glass-pill text-xs font-extrabold text-indigo-300 uppercase tracking-widest border border-indigo-500/30">
+                        <i class="fa-solid fa-cube text-indigo-400"></i>
+                        <span>PROTOSEM</span>
+                    </div>
+
+                    <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+                        <div>
+                            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+                                PRICE ProtoSem
+                            </h2>
+                            <p class="text-base sm:text-lg font-semibold text-indigo-400 mt-1">
+                                Role: <span class="text-white">Innovation Engineer Trainee</span> 
+                                <span class="text-gray-500 mx-2">•</span> 
+                                <span class="text-indigo-300 font-normal text-sm sm:text-base">20-Week Industry-Integrated Innovation Programme</span>
+                            </p>
+                        </div>
+
+                        <!-- Progress Rail Indicator -->
+                        <div class="glass-pill px-5 py-3 rounded-2xl flex items-center gap-3 self-start lg:self-center border border-white/10 text-xs font-mono text-gray-300">
+                            <span class="text-indigo-400 font-bold">01</span>
+                            <span class="text-gray-600">━━━</span>
+                            <span class="text-indigo-300">05</span>
+                            <span class="text-gray-600">━━━</span>
+                            <span class="text-indigo-300">10</span>
+                            <span class="text-gray-600">━━━</span>
+                            <span class="text-indigo-300">15</span>
+                            <span class="text-gray-600">━━━</span>
+                            <span class="text-purple-400 font-bold">20</span>
+                        </div>
+                    </div>
+
+                    <!-- Programme Description -->
+                    <div class="pt-2 text-gray-300 text-sm sm:text-base leading-relaxed space-y-3 max-w-4xl border-t border-white/5">
+                        <p>
+                            Selected for a 20-week industry-integrated innovation programme focused on solving real-world retail and commerce challenges through AI, analytics, intelligent systems, IoT, prototyping, and entrepreneurship.
+                        </p>
+                        <p class="text-gray-400">
+                            Working with industry problem statements to explore, develop, and validate practical technology solutions beyond conventional classroom learning.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Domain / Focus Tags (Disciplines) -->
+                <div class="space-y-3 pt-4 border-t border-white/5">
+                    <span class="text-xs font-bold uppercase tracking-wider text-gray-400 block">Programme Disciplines & Focus Areas</span>
+                    <div class="flex flex-wrap gap-3">
+                        <div class="glass-pill px-4 py-2.5 rounded-xl border border-indigo-500/30 flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-gray-200 hover:border-indigo-400 transition-colors">
+                            <div class="w-7 h-7 rounded-lg bg-indigo-500/20 text-indigo-400 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-cart-flatbed"></i>
+                            </div>
+                            <span>Phygital Retail & Intelligent Commerce</span>
+                        </div>
+
+                        <div class="glass-pill px-4 py-2.5 rounded-xl border border-purple-500/30 flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-gray-200 hover:border-purple-400 transition-colors">
+                            <div class="w-7 h-7 rounded-lg bg-purple-500/20 text-purple-400 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <span>AI & Analytics</span>
+                        </div>
+
+                        <div class="glass-pill px-4 py-2.5 rounded-xl border border-sky-500/30 flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-gray-200 hover:border-sky-400 transition-colors">
+                            <div class="w-7 h-7 rounded-lg bg-sky-500/20 text-sky-400 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-microchip"></i>
+                            </div>
+                            <span>Intelligent Systems & IoT</span>
+                        </div>
+
+                        <div class="glass-pill px-4 py-2.5 rounded-xl border border-amber-500/30 flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-gray-200 hover:border-amber-400 transition-colors">
+                            <div class="w-7 h-7 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-cube"></i>
+                            </div>
+                            <span>Prototyping</span>
+                        </div>
+
+                        <div class="glass-pill px-4 py-2.5 rounded-xl border border-emerald-500/30 flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-gray-200 hover:border-emerald-400 transition-colors">
+                            <div class="w-7 h-7 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+                            <span>Entrepreneurship</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The 20-Week Journey Container -->
+            <div class="space-y-8">
+                <!-- Section Subheading & Phase Navigation Filter -->
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-2 border-b border-white/5">
+                    <div>
+                        <span class="text-xs font-bold tracking-wider uppercase text-indigo-400">Programme Archive</span>
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-white">The 20-Week Innovation Log</h3>
+                        <p class="text-xs sm:text-sm text-gray-400 mt-1">Explore each week's future field notes, blueprints, and milestone reflections.</p>
+                    </div>
+
+                    <!-- Phase Navigation Filter Buttons -->
+                    <div class="flex flex-wrap items-center gap-2" id="phase-filters" role="tablist" aria-label="ProtoSem Phase Filter">
+                        <button type="button" onclick="filterProtoSem('all')" data-phase="all" class="phase-btn active px-3.5 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 border border-indigo-400/40 transition-all">
+                            ALL WEEKS
+                        </button>
+                        <button type="button" onclick="filterProtoSem(1)" data-phase="1" class="phase-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-pill text-gray-400 hover:text-white hover:border-indigo-500/40 transition-all">
+                            PHASE 01 (W01–05)
+                        </button>
+                        <button type="button" onclick="filterProtoSem(2)" data-phase="2" class="phase-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-pill text-gray-400 hover:text-white hover:border-indigo-500/40 transition-all">
+                            PHASE 02 (W06–10)
+                        </button>
+                        <button type="button" onclick="filterProtoSem(3)" data-phase="3" class="phase-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-pill text-gray-400 hover:text-white hover:border-indigo-500/40 transition-all">
+                            PHASE 03 (W11–15)
+                        </button>
+                        <button type="button" onclick="filterProtoSem(4)" data-phase="4" class="phase-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-pill text-gray-400 hover:text-white hover:border-indigo-500/40 transition-all">
+                            PHASE 04 (W16–20)
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Four-Phase Structured Journey Grid -->
+                <div id="protosem-phases-container" class="space-y-10">
+                    <!-- Dynamic rendering happens via JS below, with clean semantic HTML fallback -->
+                </div>
+
+                <!-- Interaction Notice Toast Modal / Info -->
+                <div id="protosem-toast" class="fixed bottom-6 right-6 z-50 glass-card px-5 py-3.5 rounded-2xl border border-indigo-500/50 shadow-2xl flex items-center gap-3 text-sm text-gray-200 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+                    <div class="w-8 h-8 rounded-xl bg-indigo-600/30 text-indigo-400 flex items-center justify-center text-xs">
+                        <i class="fa-solid fa-feather"></i>
+                    </div>
+                    <div>
+                        <p class="font-bold text-white text-xs" id="toast-title">Week Log</p>
+                        <p class="text-[11px] text-indigo-300" id="toast-desc">Field notes and blog chapter in progress.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Current Focus & Projects (Beginner Reframed) -->
         <section id="focus" class="max-w-6xl mx-auto px-6 py-16 space-y-10">
             <div class="text-center space-y-3">
                 <span class="text-xs font-bold tracking-wider uppercase text-indigo-400">Practical Applications</span>
@@ -509,12 +677,205 @@
             <div class="flex items-center gap-4 text-gray-400">
                 <a href="https://github.com/dhanimoorthi-creator" target="_blank" class="hover:text-indigo-400 transition-colors">GitHub</a>
                 <span>•</span>
+                <a href="#protosem" class="hover:text-indigo-400 transition-colors">ProtoSem</a>
+                <span>•</span>
                 <a href="mailto:dhanimoorti@gmail.com" class="hover:text-indigo-400 transition-colors">Contact</a>
                 <span>•</span>
                 <a href="resume.html" target="_blank" class="hover:text-indigo-400 transition-colors">Resume</a>
             </div>
         </div>
     </footer>
+
+    <!-- PROTOSEM DATA & INTERACTION SCRIPT -->
+    <script>
+        // Data-driven architecture for the 20-week programme
+        const protoSemPhases = [
+            {
+                phaseNumber: 1,
+                id: "phase-1",
+                name: "PHASE 01",
+                weeksLabel: "Weeks 01–05",
+                theme: "indigo",
+                weeks: [
+                    { week: 1, slug: "week-01", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 2, slug: "week-02", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 3, slug: "week-03", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 4, slug: "week-04", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 5, slug: "week-05", status: "Coming Soon", sub: "Field Notes in Progress" }
+                ]
+            },
+            {
+                phaseNumber: 2,
+                id: "phase-2",
+                name: "PHASE 02",
+                weeksLabel: "Weeks 06–10",
+                theme: "purple",
+                weeks: [
+                    { week: 6, slug: "week-06", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 7, slug: "week-07", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 8, slug: "week-08", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 9, slug: "week-09", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 10, slug: "week-10", status: "Coming Soon", sub: "Field Notes in Progress" }
+                ]
+            },
+            {
+                phaseNumber: 3,
+                id: "phase-3",
+                name: "PHASE 03",
+                weeksLabel: "Weeks 11–15",
+                theme: "sky",
+                weeks: [
+                    { week: 11, slug: "week-11", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 12, slug: "week-12", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 13, slug: "week-13", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 14, slug: "week-14", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 15, slug: "week-15", status: "Coming Soon", sub: "Field Notes in Progress" }
+                ]
+            },
+            {
+                phaseNumber: 4,
+                id: "phase-4",
+                name: "PHASE 04",
+                weeksLabel: "Weeks 16–20",
+                theme: "emerald",
+                weeks: [
+                    { week: 16, slug: "week-16", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 17, slug: "week-17", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 18, slug: "week-18", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 19, slug: "week-19", status: "Coming Soon", sub: "Field Notes in Progress" },
+                    { week: 20, slug: "week-20", status: "Coming Soon", sub: "Field Notes in Progress" }
+                ]
+            }
+        ];
+
+        // Render ProtoSem Phase and Week Cards
+        function renderProtoSemPhases() {
+            const container = document.getElementById("protosem-phases-container");
+            if (!container) return;
+
+            let html = "";
+
+            protoSemPhases.forEach(phase => {
+                const phaseAccent = phase.theme === 'purple' ? 'border-purple-500/30 text-purple-400' :
+                                    phase.theme === 'sky' ? 'border-sky-500/30 text-sky-400' :
+                                    phase.theme === 'emerald' ? 'border-emerald-500/30 text-emerald-400' :
+                                    'border-indigo-500/30 text-indigo-400';
+
+                html += `
+                <div class="phase-group glass-card rounded-2xl p-6 sm:p-8 space-y-6" id="phase-group-${phase.phaseNumber}" data-phase-num="${phase.phaseNumber}">
+                    <!-- Phase Header Rail -->
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pb-4 border-b border-white/5">
+                        <div class="flex items-center gap-3">
+                            <span class="px-3 py-1 rounded-lg bg-white/5 border ${phaseAccent} text-xs font-mono font-extrabold">
+                                ${phase.name}
+                            </span>
+                            <span class="text-sm font-semibold text-gray-300">${phase.weeksLabel}</span>
+                        </div>
+                        <div class="text-xs text-gray-500 font-mono flex items-center gap-2">
+                            <span class="w-2 h-2 rounded-full bg-indigo-500/50"></span>
+                            <span>5 CHAPTERS</span>
+                        </div>
+                    </div>
+
+                    <!-- 5 Connected Week Cards -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+                `;
+
+                phase.weeks.forEach(item => {
+                    const padWeek = String(item.week).padStart(2, '0');
+                    html += `
+                        <a href="#protosem-week-${padWeek}" 
+                           onclick="handleWeekClick(event, ${item.week}, '${item.slug}')" 
+                           class="week-card group relative glass-card rounded-xl p-4 flex flex-col justify-between space-y-4 border border-white/10 hover:border-indigo-500/50 cursor-pointer block"
+                           aria-label="Week ${padWeek} - ${item.status}">
+                            
+                            <!-- Card Top Meta -->
+                            <div class="flex items-center justify-between">
+                                <span class="week-badge px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-white/5 border border-white/10 text-gray-400 transition-colors">
+                                    P0${phase.phaseNumber}
+                                </span>
+                                <i class="fa-solid fa-arrow-up-right-from-square text-[10px] text-gray-500 week-arrow transition-all"></i>
+                            </div>
+
+                            <!-- Card Core Info -->
+                            <div class="space-y-1.5 pt-1">
+                                <div class="text-lg font-extrabold text-white group-hover:text-indigo-300 transition-colors tracking-tight">
+                                    WEEK ${padWeek}
+                                </div>
+                                <div class="inline-flex items-center gap-1.5 text-[11px] font-medium text-indigo-400">
+                                    <span class="w-1.5 h-1.5 rounded-full bg-indigo-400"></span>
+                                    <span>${item.status}</span>
+                                </div>
+                            </div>
+
+                            <!-- Card Footer Meta -->
+                            <div class="pt-2 border-t border-white/5 flex items-center justify-between text-[10px] text-gray-500 font-mono">
+                                <span>${item.sub}</span>
+                                <i class="fa-solid fa-lock text-[9px] opacity-40 group-hover:opacity-100 transition-opacity"></i>
+                            </div>
+                        </a>
+                    `;
+                });
+
+                html += `
+                    </div>
+                </div>
+                `;
+            });
+
+            container.innerHTML = html;
+        }
+
+        // Phase Filter Interaction
+        function filterProtoSem(targetPhase) {
+            const buttons = document.querySelectorAll(".phase-btn");
+            buttons.forEach(btn => {
+                const btnPhase = btn.getAttribute("data-phase");
+                if (String(btnPhase) === String(targetPhase)) {
+                    btn.className = "phase-btn active px-3.5 py-1.5 rounded-xl text-xs font-bold bg-indigo-600 text-white shadow-lg shadow-indigo-600/30 border border-indigo-400/40 transition-all";
+                } else {
+                    btn.className = "phase-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold glass-pill text-gray-400 hover:text-white hover:border-indigo-500/40 transition-all";
+                }
+            });
+
+            const groups = document.querySelectorAll(".phase-group");
+            groups.forEach(group => {
+                const groupPhase = group.getAttribute("data-phase-num");
+                if (targetPhase === 'all' || String(groupPhase) === String(targetPhase)) {
+                    group.style.display = "block";
+                } else {
+                    group.style.display = "none";
+                }
+            });
+        }
+
+        // Handle Click on Placeholder Week Cards
+        function handleWeekClick(e, weekNum, slug) {
+            e.preventDefault();
+            const padWeek = String(weekNum).padStart(2, '0');
+            const toast = document.getElementById("protosem-toast");
+            const title = document.getElementById("toast-title");
+            const desc = document.getElementById("toast-desc");
+
+            if (toast && title && desc) {
+                title.innerText = `WEEK ${padWeek} • Future Blog Post`;
+                desc.innerText = `Field notes for route /protosem/${slug} will be published soon!`;
+                
+                toast.classList.remove("translate-y-24", "opacity-0", "pointer-events-none");
+                toast.classList.add("translate-y-0", "opacity-100");
+
+                setTimeout(() => {
+                    toast.classList.remove("translate-y-0", "opacity-100");
+                    toast.classList.add("translate-y-24", "opacity-0", "pointer-events-none");
+                }, 3500);
+            }
+        }
+
+        // Initialize on DOM load
+        document.addEventListener("DOMContentLoaded", () => {
+            renderProtoSemPhases();
+        });
+    </script>
 
 </body>
 </html>
